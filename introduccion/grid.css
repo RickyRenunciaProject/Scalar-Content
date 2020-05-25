@@ -1,5 +1,18 @@
+.lang-menu > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .lang-menu > ul > li {
-    color: red;
+    border: 2px solid #999:
+}
+
+.lang-menu > ul > li:checked {
+    font-weight: bold;
+    border-color: #555;
 }
 
 div.es {
