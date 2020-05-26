@@ -13,7 +13,8 @@
 .lang-menu input[name="language"] + label{
     display: block;
     border: 2px solid #999;
-    padding: 0.1em;
+    padding: 0.2em;
+    margin-left: 1em;
 }
 
 .lang-menu input[name="language"]:checked + label {
@@ -22,10 +23,10 @@
     color: green;
 }
 
-div.es {
+div[lang='es'] {
     display: block;
 }
 
-div.en {
+div[lang='en'] {
     display: none;
 }
