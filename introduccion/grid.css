@@ -1,0 +1,32 @@
+.lang-menu  {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lang-menu input[name="language"]{
+    display: none;
+}
+
+.lang-menu input[name="language"] + label{
+    display: block;
+    border: 2px solid #999;
+    padding: 0.2em;
+    margin-left: 1em;
+}
+
+.lang-menu input[name="language"]:checked + label {
+    font-weight: bold;
+    border-color: #222;
+    color: green;
+}
+
+div[lang='es'] {
+    display: block;
+}
+
+div[lang='en'] {
+    display: none;
+}
