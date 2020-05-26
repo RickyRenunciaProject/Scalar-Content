@@ -1,8 +1,9 @@
 <div class="custom-content">
-    <script>
-        function setPageLanguage( groupName ) {
+    <div class="lang-menu">
+        <input id="es-button" type="radio" name="language" value="es" checked="checked" onclick='function(this.value){
+            print(typeof(groupName));
             var radios = document.getElementsByName( groupName );
-            var language = null;
+            var language = "null";
             for ( i=0; i < radios.length; i++ ) {
                 if( radios[i].checked ) {
                     language = radios[i].value;
@@ -10,18 +11,34 @@
             }
             var contents = document.getElementsByClassName( "lang-content" );
             for ( i=0; i < contents.length; i++ ) {
+                window.alert(typeof(contents[i].lang));
                 if( contents[i].lang == language ){
                     contents[i].style.display = "block";
                 } else {
                     contents[i].style.display = "none";
                 }
             }
-        }
-    </script>
-    <div class="lang-menu">
-        <input id="es-button" type="radio" name="language" value="es" checked="checked" onclick="setPageLanguage(this.value)"/>
+        }'/>
         <label for="es-button">Español</label>
-        <input id="en-button" type="radio" name="language" value="en" onclick="setPageLanguage(this.value)"/>
+        <input id="en-button" type="radio" name="language" value="en" onclick='function(this.value){
+            print(typeof(groupName));
+            var radios = document.getElementsByName( groupName );
+            var language = "null";
+            for ( i=0; i < radios.length; i++ ) {
+                if( radios[i].checked ) {
+                    language = radios[i].value;
+                }
+            }
+            var contents = document.getElementsByClassName( "lang-content" );
+            for ( i=0; i < contents.length; i++ ) {
+                window.alert(typeof(contents[i].lang));
+                if( contents[i].lang == language ){
+                    contents[i].style.display = "block";
+                } else {
+                    contents[i].style.display = "none";
+                }
+            }
+        }'/>
         <label for="en-button">English</label>
     </div>
 
