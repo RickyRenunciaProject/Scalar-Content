@@ -9,7 +9,7 @@
             padding:1em;
         }
 
-        header {
+        div.main-menu {
             border: 0px solid rgb(221, 11, 193);
             width :fit-content;
             background: none;
@@ -25,7 +25,8 @@
             border-top-right-radius: 0.5em;
             border-bottom-right-radius: 0.5em;
             position: absolute;
-            left: 100%;
+            left: 0%;
+            transition: left 0.1s;
         }
         div.menu-button svg {
             width: auto;
@@ -42,7 +43,13 @@
         }
 
         input[name="displayMenu"]:checked ~ div.pathmenu {
-            width : fit-content;
+            width : 100%;
+            transition: width 0.3s;
+        }
+
+        input[name="displayMenu"]:checked ~ label div.menu-button {
+            left: 100%;
+            transition: left 0.3s;
         }
 
         div.pathmenu {
@@ -52,13 +59,14 @@
             border-width: 0;
             border-right-width: 0.5em;
             border-top-width: 0.5em;
-            width:0em;
+            width: 0%;
             padding-left: 0;
             padding-right: 0;
             overflow-x: hidden;
             display:grid;
             grid-template-columns: auto 1em;
             grid-template-rows : 2em auto;
+            transition: width 0.1s;
         }
 
         .pathmenu > .pathtitle {
@@ -102,7 +110,7 @@
     </style>
 </head>
 <body>
-    <header  class="main-menu">
+    <div  class="main-menu">
     <input id="openMenu" type="checkbox" name="displayMenu">
     <label for="openMenu"><div class="menu-button"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
         viewBox="0 0 50 50" enable-background="new 0 0 50 50" xml:space="preserve">
@@ -149,7 +157,7 @@
         <svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" width="11.56886" height="53.152721" viewBox="0 0 11.56886 53.15272" version="1.1" id="SVGRoot" inkscape:version="0.92.3 (2405546, 2018-03-11)" sodipodi:docname="Menu.svg"> <title id="title5265">RRP-PathStep</title> <sodipodi:namedview id="base" pagecolor="#ffffff" bordercolor="#666666" borderopacity="1.0" inkscape:pageopacity="0.0" inkscape:pageshadow="2" inkscape:zoom="16" inkscape:cx="-3.2573058" inkscape:cy="1.2096022" inkscape:document-units="px" inkscape:current-layer="layer1" showgrid="false" inkscape:window-width="1920" inkscape:window-height="2089" inkscape:window-x="0" inkscape:window-y="42" inkscape:window-maximized="1" inkscape:grid-bbox="true" fit-margin-top="-2.7755576e-17" fit-margin-left="0" fit-margin-right="0" fit-margin-bottom="0" /> <defs id="defs863" /> <metadata id="metadata866"> <rdf:RDF> <cc:Work rdf:about=""> <dc:format>image/svg+xml</dc:format> <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" /> <dc:title>RRP-PathStep</dc:title> <dc:creator> <cc:Agent> <dc:title>RickyRenunciaProject</dc:title> </cc:Agent> </dc:creator> </cc:Work> </rdf:RDF> </metadata> <g id="layer1" inkscape:groupmode="layer" inkscape:label="pathStep" transform="translate(-45.974203,-75.873073)"> <rect style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1.2222234;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="rect1522" width="3.2148814" height="41.451611" x="50.097813" y="76.484184" /> <circle style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" id="path1422" cx="51.758633" cy="123.24136" r="5.28443" /> </g> </svg> 
 
     </div>
-    </header>
+</div>
     <h1 style="text-align: center;">Casiopea</h1>
     <p>Casiopea 1st
         The first label to sign them was Alfa Records, which released their album Casiopea. "Galactic Funk" appeared on their 1981 album Cross Point (1981) with ten different versions recorded both live and in studio. The album Eyes of the Mind was released in the United States in 1981. They then released Mint Jams (1982), followed during the same year by 4x4, which was recorded with Lee Ritenour, Harvey Mason, Nathan East, and Don Grusin. The band's first overseas concert was in the United Kingdom in 1983. The band has toured Europe, South America, Australia, and Southeast Asia. In 1987, Casiopea signed to Polydor. Akira Jimbo and Tetsuo Sakurai, who played drums and bass, respectively, as part of the first "Classic Lineup" of Casiopea, left the band after years of musical differences. They formed the duo Jimsaku.
